@@ -1,0 +1,15 @@
+{
+  "name": "wildwood-stay",
+  "version": "1.0.0",
+  "description": "Complete MERN Hotel Cabin Booking Application",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client start\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client start",
+    "seed": "npm --prefix server run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
